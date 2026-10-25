@@ -41,7 +41,7 @@ jobs:
             TOXENV_SUFFIX: "-min"
           - python-version: "3.10"
             os: ubuntu-latest
-            TOX_EXTRA_COMMAND: "- black --check --diff ./rdflib"
+            TOX_EXTRA_COMMAND: "ruff format --check --diff ./rdflib"
             suffix: "-lxml"
             TOXENV_SUFFIX: "-lxml"
           - python-version: "3.11"
